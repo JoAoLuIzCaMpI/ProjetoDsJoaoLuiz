@@ -49,12 +49,12 @@ CREATE TABLE `cliente` (
 DROP TABLE IF EXISTS `produto`;
 CREATE TABLE `produto` (
   `codRemedio` int(11) NOT NULL,
-  `Preco` float(5,2) NOT NULL,
-  `Unidade` int(3) NOT NULL,
+  `Preco` double(5,2) NOT NULL,
+  `Unidade_med` varchar(20) NOT NULL,
   `Uso` varchar(20) NOT NULL,
   `Composicao` varchar(50) NOT NULL,
   `Bula` varchar(255) NOT NULL,
-  `DataValidade` varchar(10) NOT NULL
+  `DataValidade` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
